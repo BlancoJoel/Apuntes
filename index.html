@@ -129,20 +129,61 @@ Para poner una tabla la haremos como se ve abajo, los guiones es para darle la a
 ### HTML 
 
 ¿Qué es HTML?
-HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas web.
+    -HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas web.
 
-Define la estructura y el contenido de una página mediante etiquetas (tags).
+    -Define la estructura y el contenido de una página mediante etiquetas (tags).
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+Esta es la estructura básica de un documento HTML:
+```
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+    </body>
+    </html>
+```
+
+<!DOCTYPE html>: Esto nos dice que es un documento HTML5.
+<html>: Contiene todo el contenido de la página.
+<head>: Aqui ponemos datos visibles para nosotros los que creamos el codigo, aparte tambien ponemos el titulo de la pagina y diferentes tipos de enlaces.
+<body>: Contenido principal (textos, imagenes, tablas, etc).
+
+
+#### Encabezados
+
+En html los encabezados se hacen de la siguiente manera, es decir con la etiqueta h1, h2, h3, h4, h5 y h6. La diferencia entre ellos es el tamaño, siendo el 1 el mas grande y el 6 el mas pequeño.
+
+```
+    <h1>Encabezado 1</h1>
+    <h2>Encabezado 2</h2>
+    <h3>Encabezado 3</h3>
+    <h4>Encabezado 4</h4>
+    <h5>Encabezado 5</h5>
+    <h6>Encabezado 6</h6>
+```
+
+
+#### Parrafos y texto 
+
+Para poner texto utilizamos la etiqueta p, para poner texto en negrita utilizamos la etiqueta strong, para poner texto en cursiva utilizamos la etiqueta em.
+
+```
+<p>Este es un parrafo</p>
+<strong>Texto en negrita</strong>
+<em>Texto en cursiva</em>
+```
+
+Y la forma correcta de ponerlo es la siguiente:
+
+```
+<p><strong>Este es un parrafo</strong></p>
+```
+
+
 
