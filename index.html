@@ -318,18 +318,18 @@ La etiqueta source permite multiples formatos de compatibilidad, y el atributo c
 
 XML (Extensible Markup Language) es un lenguaje de marcado diseñado para almacenar y transportar datos. A diferencia de HTML, XML no define cómo se debe mostrar la información, sino que se centra en la estructura y el significado de los datos.
 
----
 
-### Características principales de XML
+
+#### Características principales de XML
 
 1. **Autodefinido**: XML permite definir tus propias etiquetas, lo que lo hace muy flexible.
 2. **Legible por humanos y máquinas**: Su estructura es fácil de entender tanto para personas como para programas.
 3. **Jerárquico**: Los datos se organizan en una estructura de árbol.
 4. **Independiente de la plataforma**: Puede ser utilizado en cualquier sistema operativo o aplicación.
 
----
 
-### Estructura básica de un documento XML
+
+#### Estructura básica de un documento XML
 
 Un documento XML tiene una estructura sencilla y bien definida. Aquí tienes un ejemplo básico:
 
@@ -344,11 +344,12 @@ Un documento XML tiene una estructura sencilla y bien definida. Aquí tienes un 
 
 
 
+
 ### CSS (Cascading Style Sheets)
 
 CSS (Cascading Style Sheets) es un lenguaje utilizado para describir la presentación de un documento HTML. Permite controlar el diseño, colores, fuentes, espaciado y otros aspectos visuales de una página web.
 
----
+
 
 #### Características principales de CSS
 
@@ -356,7 +357,6 @@ CSS (Cascading Style Sheets) es un lenguaje utilizado para describir la presenta
 2. **Reutilización**: Puedes aplicar estilos a múltiples elementos o páginas desde un solo archivo CSS.
 3. **Jerarquía en cascada**: Los estilos se aplican en un orden específico, permitiendo la combinación de reglas.
 
----
 
 #### Formas de incluir CSS
 
@@ -441,5 +441,56 @@ CSS (Cascading Style Sheets) es un lenguaje utilizado para describir la presenta
 #### Propiedades CSS
 
 
-1. color y fondo
+1. color y fondo:
+
+color: red;  Color del texto 
+background-color: yellow;  Color de fondo 
+background-image: url('imagen.jpg');  Imagen de fondo 
+
+
+2. Texto y fuentes: 
+
+font-family: Arial, sans-serif;  Fuente 
+font-size: 16px;  Tamaño de fuente 
+font-weight: bold;  Negrita 
+text-align: center;  Alineación 
+text-decoration: underline;  Subrayado 
+
+3. espaciado:
+
+margin: 10px;  Margen externo 
+padding: 15px;  Relleno interno 
     
+
+4. Bordes:
+
+border: 2px solid black;  Borde sólido 
+border-radius: 10px;  Bordes redondeados 
+
+5. Dimensiones:
+
+width: 200px;  Ancho
+height: 100px;  Alto 
+
+
+
+6. Posicionamiento:
+
+position: relative; Relativo al elemento padre 
+top: 10px; Desplazamiento desde arriba 
+left: 20px; Desplazamiento desde la izquierda 
+
+
+
+
+##### Media Queries
+
+Las media queries son una técnica de CSS que permite aplicar estilos específicos según el tamaño de la pantalla o el dispositivo. Esto es fundamental para crear diseños responsivos que se adapten a diferentes dispositivos (móviles, tabletas, escritorios). Ej:
+
+
+@media (max-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
