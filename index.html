@@ -163,6 +163,8 @@ Vamos a hablar un poco mas del head porque es importante, aqui hemos de poner me
     - <title>: Titulo de la pestaña del navegador.
     - <link>: Enlaces a hojas de estilo (CSS) o scripts (JavaScript).
 
+    
+
 #### Encabezados
 
 En html los encabezados se hacen de la siguiente manera, es decir con la etiqueta h1, h2, h3, h4, h5 y h6. La diferencia entre ellos es el tamaño, siendo el 1 el mas grande y el 6 el mas pequeño.
@@ -210,13 +212,14 @@ img src: URL de la imagen, alt: texto alternativo, width: ancho de la imagen, he
 #### Listas
 Para poner una lista utilizamos la etiqueta ul (lista desordenada) o la etiqueta ol (lista ordenada), y para poner un elemento de la lista utilizamos la etiqueta li.
 
-<!-- Lista Ordenada (numerada) -->
+ Lista Ordenada (numerada) 
 <ol>
     <li>Elemento 1</li>
     <li>Elemento 2</li>
 </ol>
 
-<!-- Lista Desordenada (viñetas) -->
+ Lista Desordenada (viñetas)
+
 <ul>
     <li>Elemento A</li>
     <li>Elemento B</li>
@@ -294,10 +297,149 @@ Esta es la estructura básica de un formulario, es muy sencilla y la podemos ver
 
 
 
-#### Multimedia: Audio y 
+#### Multimedia: Audio y video 
+
+Para poner un video utilizamos la etiqueta video, y para poner un audio utilizamos la etiqueta audio.
+
+<video controls width="400">
+    <source src="video.mp4" type="video/mp4">
+    Tu navegador no soporta video.
+</video>
+
+<audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+La etiqueta source permite multiples formatos de compatibilidad, y el atributo controls añade controles de reproducción.
+
+
+
+### XML (Extensible Markup Language)
+
+XML (Extensible Markup Language) es un lenguaje de marcado diseñado para almacenar y transportar datos. A diferencia de HTML, XML no define cómo se debe mostrar la información, sino que se centra en la estructura y el significado de los datos.
+
+---
+
+### Características principales de XML
+
+1. **Autodefinido**: XML permite definir tus propias etiquetas, lo que lo hace muy flexible.
+2. **Legible por humanos y máquinas**: Su estructura es fácil de entender tanto para personas como para programas.
+3. **Jerárquico**: Los datos se organizan en una estructura de árbol.
+4. **Independiente de la plataforma**: Puede ser utilizado en cualquier sistema operativo o aplicación.
+
+---
+
+### Estructura básica de un documento XML
+
+Un documento XML tiene una estructura sencilla y bien definida. Aquí tienes un ejemplo básico:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<libro>
+    <titulo>Aprendiendo XML</titulo>
+    <autor>Juan Pérez</autor>
+    <editorial>Editorial Ejemplo</editorial>
+    <precio moneda="EUR">19.99</precio>
+</libro>
+
+
+
+### CSS (Cascading Style Sheets)
+
+CSS (Cascading Style Sheets) es un lenguaje utilizado para describir la presentación de un documento HTML. Permite controlar el diseño, colores, fuentes, espaciado y otros aspectos visuales de una página web.
+
+---
+
+#### Características principales de CSS
+
+1. **Separación de contenido y diseño**: HTML se utiliza para la estructura y CSS para el diseño.
+2. **Reutilización**: Puedes aplicar estilos a múltiples elementos o páginas desde un solo archivo CSS.
+3. **Jerarquía en cascada**: Los estilos se aplican en un orden específico, permitiendo la combinación de reglas.
+
+---
+
+#### Formas de incluir CSS
+
+1. **CSS en línea**: Se utiliza el atributo `style` directamente en las etiquetas HTML.
+   ```html
+   <p style="color: red; font-size: 16px;">Texto en rojo</p>
+
+2.  CSS interno: Se incluye dentro de una etiqueta <style> en el <head> del documento.
+
+    <style>
+        p {
+            color: blue;
+            font-size: 18px;
+        }
+    </style>
+
+3.  CSS externo: Se enlaza un archivo .css externo mediante la etiqueta <link>.
+
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+
+
+#### Selectores CSS
+
+
+
+    1. Selector de etiqueta:
+
+    p {
+        color: green;
+    }
+
+
+    2. Selector de clase:
+
+    .miClase {
+        font-weight: bold;
+    }
+    
+
+    En HTML:
+
+    <p class="miClase">Texto en negrita</p>
+
+    
+    3. Selector de ID:
+
+    #miId {
+        font-style: italic;
+    }
+
+    
+    En HTML:
+
+    <div id="miId">Texto en cursiva</div>
+
+    
+    4. Selector universal:
+
+    * {
+        font-family: Arial, sans-serif;
+    }
+
+    
+    5. Selectores combinados:
+    
+    Descendiente:
+
+    div p {
+        color: purple;
+    }
+
+
+    Directo:
+
+    p.miClase {
+        font-size: 14px;
+    }
 
 
 
 
+#### Propiedades CSS
 
 
+1. color y fondo
+    
